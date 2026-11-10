@@ -1,0 +1,16 @@
+Day 1: learned Git 
+git status                          # shows notes.txt as untracked
+git add notes.txt                   # stage it
+git commit -m "Add first notes"     # save the snapshot
+git log --oneline                   # see the history
+
+git diff                            # shows exactly what changed
+git add notes.txt
+git commit -m "Add second line"
+
+git add notes.txt
+git commit -m "Add third line on a branch"
+git switch main                     # go back (the third line disappears)
+git merge feature/more-notes        # bring the work into main
+git log --oneline                   # you now see all three commits
+
